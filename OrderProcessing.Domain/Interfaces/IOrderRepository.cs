@@ -8,6 +8,6 @@ namespace OrderProcessing.Domain.Interfaces
         Task<Order?> GetByIdAsync(Guid id);
         Task<IEnumerable<Order>> GetAllAsync();
         Task UpdateAsync(Order order);
-        Task<IEnumerable<Order>> GetPendingOrderAsync();
+        Task<IEnumerable<Order>> GetPendingOrdersAsync();
     }
 }
